@@ -3,40 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact Us</title>
-  <link rel="stylesheet" href="/CSS/style.css">|
+  <link rel="stylesheet" href="/CSS/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <div class="overlay">
     <div class="contact-box">
 
-      <i class="fa-solid fa-xmark"></i>
+      <!-- Icon button -->
+      <button class="close-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
 
       <h1>Contact us</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
       <div class="form-section">
         <div class="input-group">
-          <label>Name</label>
-          <div class="fake-input"></div>
+          <label for="name">Name</label>
+          <input type="text" id="name" class="real-input" placeholder="">
         </div>
 
         <div class="input-group">
-          <label>Email</label>
-          <div class="fake-input"></div>
+          <label for="email">Email</label>
+          <input type="email" id="email" class="real-input" placeholder="">
         </div>
 
         <div class="input-group">
-          <label>Message</label>
-          <div class="fake-textarea">Type your message...</div>
+          <label for="message">Message</label>
+          <textarea id="message" class="real-textarea" placeholder="Type your message..."></textarea>
         </div>
 
         <div class="checkbox">
-          <div class="fake-checkbox"></div>
-          <span>I accept the <a href="#">Terms</a></span>
+          <input type="checkbox" id="terms" class="real-checkbox">
+          <label for="terms">
+            I accept the <a href="#" class="terms-link">Terms</a>
+          </label>
         </div>
 
-        <div class="submit-btn">Submit</div>
+        <button class="submit-btn">Submit</button>
       </div>
 
     </div>
