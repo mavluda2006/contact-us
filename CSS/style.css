@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #1a1a1a;
+}
+
+.overlay {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-box {
+  background-color: white;
+  width: 642px;
+  height: 846px;
+  padding: 40px;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.fa-xmark {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 28px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.fa-xmark:hover {
+  color: grey; 
+}
+
+
+
+.contact-box h1 {
+  color: black;
+  font-size: 48px;
+  text-align: center;
+  font-weight: 800;
+  width: 512px;
+  height: 58px;
+  margin: 0 auto 12px auto;
+}
+
+.contact-box p {
+  width: 512px;
+  height: 27px;
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  margin: 0 auto 30px auto;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 512px;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.input-group {
+  width: 512px;
+  gap: 8px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  width: 512px;
+  height: 24px;
+}
+
+.fake-input {
+  width: 512px;
+  height: 48px;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  background-color: white;
+  border-radius: 1px;
+}
+
+.fake-textarea {
+  width: 512px;
+  height: 180px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 1px;
+  font-size: 14px;
+  background-color: white;
+  color: #555;
+}
+
+/* Checkbox qismi */
+.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  width: 512px;
+  gap: 8px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.fake-checkbox {
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--Color-Neutral-Darkest, rgba(0, 0, 0, 1));
+  border-radius: 1px;
+  margin-right: 10px;
+}
+
+/* Submit tugmasi */
+.submit-btn {
+  background-color: black;
+  color: white;
+  border-radius: 1px;
+  padding: 10px 30px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  text-align: center;
+  width: 99px;
+  height: 48px;
+  margin: 0 auto;
+  gap: 8px;
+}
+
+.submit-btn:hover {
+  background-color: grey;
+}
