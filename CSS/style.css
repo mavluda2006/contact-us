@@ -9,8 +9,19 @@ body {
   background-color: #1a1a1a;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 220px;           
+  padding-bottom: 500px;
+  margin-top: 500px;       
+}
+
+
 .overlay {
-  height: 100vh;
+  height: auto; 
+  margin-top: 40px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,3 +168,163 @@ body {
   background-color: grey;
   transition: all 0.3s ease-in-out;
 }
+
+/* === Portfolio Section === */
+.portfolio-wrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+
+.section-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 12px;
+}
+
+.heading {
+  width: 768px;
+  height: 58px;
+  font-size: 48px;
+  font-weight: 700px;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.subtext {
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  margin-bottom: 48px;
+  max-width: 512px;
+}
+
+.projects-row {
+  width: 100%;
+  max-width: 1312px;
+  height: 539px;
+  display: flex;
+  justify-content: center; 
+  gap: 48px;
+  margin: 0 auto;
+}
+
+.project-card {
+  max-width: 632px;
+  width: 100%;
+  height: 539px;
+  gap: 24px;
+  padding: 20px;
+  border-radius: 6px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 356px;
+  background-color: rgba(128, 128, 128, 0.281);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: darkgray;
+  font-size: 48px;
+  border-radius: 4px;
+}
+
+.project-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  height: 34px;
+}
+
+.project-card p {
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  width: 100%;
+  height: 24px;
+   white-space: nowrap;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: var(--Color-Neutral-Lightest, rgba(238, 238, 238, 1));
+  color: black;
+  padding: 8px 12px;
+  border-radius: 3px;
+  font-size: 10px;
+  transition: background 0.3s ease;
+  width: 76px;
+  height: 29px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tag:hover {
+  background-color: black;
+  color: white;
+}
+
+.view-project {
+  background-color: white;
+  border: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: none;
+}
+
+.view-project i {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+  width: 24px;
+  height: 24px;
+}
+
+.view-all {
+  width: 104px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+}
+
+.view-all:hover {
+  background-color: black;
+  color: white;
+}
+
+
+

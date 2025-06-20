@@ -1,50 +1,95 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact Us</title>
-  <link rel="stylesheet" href="/CSS/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <title>Contact & Portfolio</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <div class="overlay">
-    <div class="contact-box">
+  <main>
+    <!-- Contact Section -->
+    <section class="overlay">
+      <div class="contact-box">
+      
+        <button class="close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
 
-      <!-- Icon button -->
-      <button class="close-btn">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
+        <h1>Contact us</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-      <h1>Contact us</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="form-section">
+          <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="real-input" />
+          </div>
 
-      <div class="form-section">
-        <div class="input-group">
-          <label for="name">Name</label>
-          <input type="text" id="name" class="real-input" placeholder="">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="real-input" />
+          </div>
+
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="real-textarea" placeholder="Type your message..."></textarea>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="terms" class="real-checkbox" />
+            <label for="terms">
+              I accept the <a href="#" class="terms-link">Terms</a>
+            </label>
+          </div>
+
+          <button class="submit-btn">Submit</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-wrapper">
+      <p class="section-label">Portfolio</p>
+      <h2 class="heading">Short heading goes here</h2>
+      <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+      <div class="projects-row">
+        <div class="project-card">
+          <div class="image-placeholder">
+            <i class="fa-solid fa-image"></i>
+          </div>
+          <h3>Project name here</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+          <div class="tags">
+            <span class="tag">Tag one</span>
+            <span class="tag">Tag two</span>
+            <span class="tag">Tag three</span>
+          </div>
+          
+          <button class="view-project">
+            View project <i class="fa-solid fa-chevron-right"></i></i>
+          </button>
         </div>
 
-        <div class="input-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" class="real-input" placeholder="">
+        <div class="project-card">
+          <div class="image-placeholder">
+            <i class="fa-solid fa-image"></i>
+          </div>
+          <h3>Project name here</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+          <div class="tags">
+            <span class="tag">Tag one</span>
+            <span class="tag">Tag two</span>
+            <span class="tag">Tag three</span>
+          </div>
+          <button class="view-project">
+            View project <i class="fa-solid fa-chevron-right"></i>
+          </button>
         </div>
-
-        <div class="input-group">
-          <label for="message">Message</label>
-          <textarea id="message" class="real-textarea" placeholder="Type your message..."></textarea>
-        </div>
-
-        <div class="checkbox">
-          <input type="checkbox" id="terms" class="real-checkbox">
-          <label for="terms">
-            I accept the <a href="#" class="terms-link">Terms</a>
-          </label>
-        </div>
-
-        <button class="submit-btn">Submit</button>
       </div>
 
-    </div>
-  </div>
+      <button class="view-all">View all</button>
+    </section>
+  </main>
 </body>
 </html>
